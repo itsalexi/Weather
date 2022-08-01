@@ -51,8 +51,8 @@ body {
   font-size: 4em;
 }
 
-.bigcloud {
-  font-size: 5em;
+.bigger {
+  font-size: 1.5em;
 }
 
 input[type="text"] {
@@ -61,6 +61,20 @@ input[type="text"] {
   border-bottom: 2px solid white;
   font-size: 1em;
   padding: 0.25em;
+}
+
+.submit {
+  background: none;
+  border: none;
+}
+
+.changeUnits {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.changeUnits:hover {
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -123,4 +137,9 @@ input[type="text"] {
   html {
     font-size: 70%;
   }
+}
+
+img {
+  height: 3em;
+  width: 3em;
 }
