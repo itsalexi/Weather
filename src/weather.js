@@ -11,7 +11,7 @@ class Weather {
     const response = await fetch(this.buildURL(city, units));
     const weatherData = await response.json();
     const forecast = await this.getForecast(this.getCoord(weatherData));
-    console.log(forecast);
+    return [weatherData, forecast];
   }
 
   getCoord(data) {
@@ -28,17 +28,4 @@ class Weather {
   }
 }
 
-function getDayOfWeek(timestamp) {
-  const days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
-  const day = new Date(timestamp * 1000).getDay();
-  return days[day];
-}
 export default Weather;
