@@ -12,4 +12,14 @@ function getDayOfWeek(timestamp) {
   return days[day];
 }
 
-export { getDayOfWeek };
+function getDate(timestamp) {
+  return new Date(timestamp * 1000).toDateString();
+}
+
+function getTime(timestamp) {
+  return new Date(timestamp * 1000).toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+export { getDayOfWeek, getDate, getTime };

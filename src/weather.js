@@ -10,7 +10,7 @@ class Weather {
   async getWeather(city, units) {
     const response = await fetch(this.buildURL(city, units));
     const weatherData = await response.json();
-    const forecast = await this.getForecast(this.getCoord(weatherData));
+    const forecast = await this.getForecast(this.getCoord(weatherData), units);
     return [weatherData, forecast];
   }
 

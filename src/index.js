@@ -12,4 +12,4 @@ String.prototype.toProperCase = function () {
   });
 };
 
-DOM.updateData(weatherData);
+DOM.updateData(weatherData, "metric");
