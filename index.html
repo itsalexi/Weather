@@ -5,12 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="current-weather">
+        <div class="weather-left">
+            <p class="cloud-type">Broken Clouds</p>
+            <p class="city-name">City of Marikina</p>
+            <div class="current-date">
+                <p class="today-date">Monday, 1st Aug '22</p>
+                <p class="current-time">3:49 PM</p>
+            </div>
+            <p class="current-temperature">30 °C</p>
+            <i class="fa-solid fa-cloud bigcloud"></i>
+            <div class="locationInput">
+                <input type="text" name="location" id="location" placeholder="Search Location."required>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="weather-right">
 
+        </div>
+    </div>
+
+    <div class="forecast-container">
+        <div class="forecast-card">
+            <p class="forecast-day">Tuesday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="forecast-card">
+            <p class="forecast-day">Wednesday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="forecast-card">
+            <p class="forecast-day">Thursday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="forecast-card">
+            <p class="forecast-day">Friday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="forecast-card">
+            <p class="forecast-day">Saturday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="forecast-card">
+            <p class="forecast-day">Sunday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+        <div class="forecast-card">
+            <p class="forecast-day">Monday</p>
+            <div class="forecast-temperatures">
+                <p class="forecast-high-temperature">14 °C</p>
+                <p class="forecast-low-temperature">8 °C</p>
+            </div>
+            <i class="fa-solid fa-cloud"></i>
+        </div>
+    </div>
 </body>
 
 </html>
